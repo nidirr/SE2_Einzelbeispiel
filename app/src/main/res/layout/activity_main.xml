@@ -6,30 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="332dp"
-        android:layout_height="38dp"
-        android:text="Please enter your student number"
-        app:autoSizeTextType="uniform"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="165dp" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="216dp"
+        android:text="Sent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/textNumber1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="116dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="259dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/button1"
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sent"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="413dp" />
-
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="444dp"
+        android:text="Please enter your student number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

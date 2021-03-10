@@ -23,5 +23,14 @@ public class MainActivity extends AppCompatActivity {
         textView4 = (TextView) findViewById(R.id.textView4);
         textNumber1 = (EditText) findViewById(R.id.textNumber1);
 
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // OnClick Methode legt fest was passiert, wenn man auf den Button Klickt -> Bei uns wird Matrikelnr an den Server geschickt und das ergebnis zurück via TCP
+                textView4.setText("Ihre Matrikelnummer: ");
+
+            }
+        });
+
     }
 }
